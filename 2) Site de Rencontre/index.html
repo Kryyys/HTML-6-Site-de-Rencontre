@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Rencontre</title>
+</head>
+
+<body>
+
+    <h1>Site de Rencontre</h1>
+    <form action="">
+        <!--Champs de saisies-->
+        <!--Nom, prénom, Email-->
+
+        <label for="Nom">Nom :</label>
+        <input type="text" required minlength="2" maxlength="45" pattern="^\D$">  <br>
+
+        <label for="Prénom">Prénom :</label>
+        <input type="text" required minlength="2" maxlength="45" pattern="^\D$"> <br>
+
+        <label for="Email">Email :</label>
+        <input type="email" pattern="^([a-z0-9]+)@([a-z]+)(\.com|\.net|\.fr|\.org)$ "> 
+        <br> <br>
+
+        <!--Sexe-->
+        <label for="Sexe"> Sexe :</label>
+        <input type="radio" name="Sexe" value="Femme" checked /><label>Femme</label>
+        <input type="radio" name="Sexe" value="Homme" /><label>Homme</label>
+        <br><br>
+
+        <!--Transfert de Fichier Photo-->
+        <label for="Photo">Ajoutez une photo :</label>
+        <input type="file" name="photo" accept=".png, .jpg"><br><br>
+
+        <!--Liste Pays-->
+        <label for="Pays">Pays :</label>
+        <select>
+            <option value="France">France</option>
+            <option value="Angleterre">Angleterre</option>
+            <option value="Allemagne" selected>Allemagne</option>
+            <option value="Italie">Italie</option>
+            <option value="Suisse">Suisse</option>
+            <option value="Espagne">Espagne</option>
+        </select>
+        <br><br>
+
+        <!--Choix Multiple Langues-->
+        <label for="Langue">Langues préférées :</label>
+        <input type="checkbox" name="Français"><label>Français</label> <br>
+        <input type="checkbox" name="Anglais"><label>Anglais</label><br>
+        <input type="checkbox" name="Allemand"><label>Allemand</label><br>
+        <input type="checkbox" name="Italien"><label>Italien</label><br>
+        <input type="checkbox" name="Suisse"><label>Suisse</label><br>
+        <input type="checkbox" name="Espagnol"><label>Espagnol</label><br>
+        <br>
+
+        <!--Domaines d'activités-->
+        <label for="Domaines">Domaines d'Activités :</label><br>
+        <input type="checkbox" name="Plombier"><label>Plombier</label> <br>
+        <input type="checkbox" name="Electricien"><label>Electricien</label><br>
+        <input type="checkbox" name="Maçon"><label>Maçon</label><br>
+        <input type="checkbox" name="Carreleur"><label>Carreleur</label><br>
+        <input type="checkbox" name="Menuisier"><label>Menuisier</label><br>
+        <input type="checkbox" name="Couvreur"><label>Couvreur</label><br>
+        <br><br>
+
+        <!--Bouton-->
+        <input type="submit">
+    </form>
+</body>
+
+</html>
